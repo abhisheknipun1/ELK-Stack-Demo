@@ -1,0 +1,13 @@
+1. Copy remote git to your local folder.
+
+2. Open terminal and go to your local folder (Triag-dashboard folder).
+
+3. Download webdriver - npm install webdriver (command).
+
+4. Download Selenium-webdriver - npm install selenium-webdriver (command).
+
+5. Download Geckodriver (for Firefox) - npm install geckodriver (command).
+
+6. Run command - node firefox.js.
+
+-- firefox.js - This file has selenium scripts upto clicking "log button" inside page.
