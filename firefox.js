@@ -2,7 +2,7 @@ var webdriver = require('selenium-webdriver');
 
   var driver = new webdriver.Builder().forBrowser('firefox').build();
  
-    driver.get('http://10.0.2.15:1101');		//url of your page
+    driver.get('http://localhost:1101');		//url of your page
 
     // checking for Traig Dashboard homepage by using Title of page
 
@@ -35,7 +35,7 @@ var webdriver = require('selenium-webdriver');
 	{
 		var url = driver.getCurrentUrl().then (function(url) {
 
-			if (url == 'http://10.0.2.15:1101/#/') 		//url of home page
+			if (url == 'http://localhost:1101/#/') 		//url of home page
 			{
 				console.log('successfully opening Traig Dashboard page');
 				return true;
@@ -61,7 +61,7 @@ var webdriver = require('selenium-webdriver');
 	{
 		var url = driver.getCurrentUrl().then (function(url) {
 
-			if (url == 'http://10.0.2.15:1101/#/loadconf') 		
+			if (url == 'http://localhost:1101/#/loadconf') 		
 			//url of page after clicking log button
 			{
 				console.log('successfully clicking on log button');
